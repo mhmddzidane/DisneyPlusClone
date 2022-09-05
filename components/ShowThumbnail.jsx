@@ -25,12 +25,12 @@ function ShowThumbnail({ result }) {
           <p>{result.original_name}</p>
           <p>{result.release_date}</p>
           <p className="truncate text-xs text-gray-300">{result.overview}</p>
-          <a href="/">
+          <div>
             <div className="h-1/2 hover:bg-[#06202a] rounded px-1 transition duration-400 transform">
               <p>+</p>
               <p className="uppercase text-xs">Tambah ke daftar nonton</p>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

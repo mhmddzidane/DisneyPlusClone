@@ -22,35 +22,35 @@ const Header = () => {
         className="cursor-pointer"
         onClick={() => router.push("/")}
       />
-      {session && (
-        <div className="hidden ml-10 md:flex space-x-6 items-center">
-          <a className="header-link group">
-            <HomeIcon className="h-4" />
-            <span className="span">Home</span>
-          </a>
-          <a className="header-link group">
-            <MagnifyingGlassIcon className="h-4" />
-            <span className="span">Search</span>
-          </a>
-          <a className="header-link group">
-            <PlusIcon className="h-4" />
-            <span className="span">Watchlist</span>
-          </a>
-          <a className="header-link group">
-            <StarIcon className="h-4" />
-            <span className="span">Originals</span>
-          </a>
-          <a className="header-link group">
-            <img src="/images/movie-icon.svg" alt="" className="h-5" />
-            <span className="span">Movies</span>
-          </a>
-          <a className="header-link group">
-            <img src="/images/series-icon.svg" alt="" className="h-5" />
-            <span className="span">Series </span>
-          </a>
-        </div>
-      )}
-      {!session ? (
+      {/* {session && ( */}
+      <div className="hidden ml-10 md:flex space-x-6 items-center">
+        <a className="header-link group">
+          <HomeIcon className="h-4" />
+          <span className="span">Home</span>
+        </a>
+        <a className="header-link group">
+          <MagnifyingGlassIcon className="h-4" />
+          <span className="span">Search</span>
+        </a>
+        <a className="header-link group">
+          <PlusIcon className="h-4" />
+          <span className="span">Watchlist</span>
+        </a>
+        <a className="header-link group">
+          <StarIcon className="h-4" />
+          <span className="span">Originals</span>
+        </a>
+        <a className="header-link group">
+          <img src="/images/movie-icon.svg" alt="" className="h-5" />
+          <span className="span">Movies</span>
+        </a>
+        <a className="header-link group">
+          <img src="/images/series-icon.svg" alt="" className="h-5" />
+          <span className="span">Series </span>
+        </a>
+      </div>
+      {/* )} */}
+      {/* {!session ? (
         <button
           className="ml-auto uppercase border px-4 py-1.5 rounded font-medium tracking-wide hover:bg-white hover:text-black transition duration-200"
           onClick={signIn}
@@ -63,7 +63,7 @@ const Header = () => {
           className="ml-auto h-12 w-12 rounded-full object-cover cursor-pointer"
           onClick={signOut}
         />
-      )}
+      )} */}
     </header>
   );
 };
